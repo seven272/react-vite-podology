@@ -1,0 +1,12 @@
+.section {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 650px) {
+    .section {
+      width: 90%;
+    }
+  }

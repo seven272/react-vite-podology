@@ -1,0 +1,35 @@
+.title {
+  display: flex;
+  font: var(--font-menu);
+  margin-left: 10px;
+}
+
+.descr {
+  display: flex;
+  justify-content:stretch;
+  align-items: center;
+  font: var(--font-m);
+  text-align: justify;
+  padding: 5px 10px;
+}
+
+.title_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .descr {
+    font: var(--font-s);
+    padding: 5px 5px;
+  }
+
+  .title {
+    font: var(--font-submenu);
+    margin-left: 5px;
+  }
+}

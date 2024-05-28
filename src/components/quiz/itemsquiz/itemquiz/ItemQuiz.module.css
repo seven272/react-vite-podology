@@ -1,0 +1,122 @@
+.form {
+  width: 100%;
+  height: auto;
+  max-height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-white);
+  border-radius: 60px;
+  padding: 15px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-black);
+  font: var(--font-l);
+  letter-spacing: 0.11em;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Josefin Sans Bold', Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 112%;
+  color: #1b1c1d;
+}
+
+.questions {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-blue);
+  border-radius: 21px;
+}
+
+.question {
+  width: 100%;
+  min-height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding: 0px 0;
+  text-align: left;
+  font: var(--font-menu);
+  color: #fff;
+}
+.question:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.form-btn {
+  border: none;
+  width: 37%;
+  min-height: 30px;
+  max-height: 95px;
+  height: 13vh;
+  max-width: 300px;
+  background: linear-gradient(90.22deg, #c3d4de 0%, #b4b4b4 100%);
+  border-radius: 70px;
+  font-family: 'Josefin Sans Bold', Verdana;
+  text-transform: uppercase;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 112%;
+  letter-spacing: 0.5px;
+  color: #000000;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.wrap_input {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .quiz__section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .quiz__section {
+    width: 95%;
+  }
+
+  .questions {
+    width: 95%;
+  }
+
+  .form-title {
+    margin-bottom: 10px;
+  }
+
+  .form-btn {
+    width: 60%;
+    min-height: 30px;
+    height: 8vh;
+    font-size: 14px;
+    line-height: 100%;
+  }
+}

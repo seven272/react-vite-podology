@@ -1,0 +1,76 @@
+.section__age_male {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.age {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.male {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  height: auto;
+}
+
+.radio_wrap {
+  width: max-content;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font: var(--font-menu);
+}
+
+.input_age {
+  width: 100px;
+  height: 30px;
+  outline: none;
+  border: 1px solid var(--color-gray-dark);
+  color: var(--color-gray-dark);
+}
+
+.input_male {
+  margin-bottom: 10px;
+}
+
+.error {
+  font: var(--font-s);
+  color: var(--color-red);
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .section__age_male {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 25px 0;
+  }
+  
+  .radio_wrap {
+    width: max-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
